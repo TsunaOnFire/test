@@ -1,20 +1,24 @@
-# .github/release.yml
+# This file contains the template for the "auto-generated release notes"
 
+changelog:
   exclude:
     labels:
-      - skip-changelog
+      - ":chart_with_upwards_trend: dependency-update"
     authors:
-      - dependabot[bot]
+      - dependabot
   categories:
-    - title: 🚀 Features
+    - title: "⚠️ Breaking changes"
       labels:
-        - feature
-    - title: 🐛 Bug Fixes
+        - ":warning: breaking"
+    - title: "🚀 New features"
       labels:
-        - bug
-    - title: 🚀 Breaking Changes
+        - ":rocket: feature"
+    - title: "📘 Documentation updates"
       labels:
-        - breaking-change
+        - ":blue_book: documentation"
+    - title: "🐛 Bug fixes"
+      labels:
+        - ":beetle: bug"
     - title: Other Changes
       labels:
-        - "*" # Catch-all for pull requests that didn't match any of the previous categories
+        - "*"
