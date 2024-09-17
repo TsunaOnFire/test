@@ -6,7 +6,6 @@
     authors:
       - dependabot[bot]
   categories:
-    - title: Current version: 
     - title: 🚀 Features
       labels:
         - feature
