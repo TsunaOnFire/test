@@ -1,6 +1,10 @@
 # .github/release.yml
 
 changelog:
+  currentversion: Current Version:
+  previousversion: Previous Version:
+  
+  
   exclude:
     labels:
       - skip-changelog
