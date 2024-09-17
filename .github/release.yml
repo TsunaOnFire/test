@@ -1,13 +1,13 @@
 # This file contains the template for the "auto-generated release notes"
-name-template: '$NEXT_PATCH_VERSION'
-tag-template: '$NEXT_PATCH_VERSION'
 changelog:
   exclude:
     labels:
       - ":chart_with_upwards_trend: dependency-update"
     authors:
       - dependabot
-  categories:
+  categories:      
+      name-template: '$NEXT_PATCH_VERSION'
+      tag-template: '$NEXT_PATCH_VERSION'      
     - title: "⚠️ Breaking changes"
       labels:
         - ":warning: breaking"
