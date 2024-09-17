@@ -1,5 +1,6 @@
 # This file contains the template for the "auto-generated release notes"
-
+name-template: '$NEXT_PATCH_VERSION'
+tag-template: '$NEXT_PATCH_VERSION'
 changelog:
   exclude:
     labels:
