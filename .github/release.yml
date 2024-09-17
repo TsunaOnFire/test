@@ -5,7 +5,6 @@ kind: Templates
 spec:
 - name: MyTemplate
   type: xlrelease.Release
-  scheduledStartDate: 2018-10-25T07:00:00Z
   phases:
   - name: My Phase
     type: xlrelease.Phase
