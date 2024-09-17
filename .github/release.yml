@@ -1,14 +1,21 @@
 # .github/release.yml
 
-apiVersion: xl-release/v1
-kind: Templates
-spec:
-- name: MyTemplate
-  type: xlrelease.Release
-  phases:
-  - name: My Phase
-    type: xlrelease.Phase
-    tasks:
-    - name: My Task
-      type: xlrelease.Task
-    color: #0099CC
+changelog:
+  exclude:
+    labels:
+      - skip-changelog
+    authors:
+      - dependabot[bot]
+  categories:
+    - title: 🚀 Features
+      labels:
+        - feature
+    - title: 🐛 Bug Fixes
+      labels:
+        - bug
+    - title: 🚀 Breaking Changes
+      labels:
+        - breaking-change
+    - title: Other Changes
+      labels:
+        - "*" # Catch-all for pull requests that didn't match any of the previous categories
