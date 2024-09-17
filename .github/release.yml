@@ -1,13 +1,15 @@
 # .github/release.yml
 
-changelog:
-  categories:
-    - title: 🏕 Features
-      labels:
-        - '*'
-      exclude:
-        labels:
-          - dependencies
-    - title: 👒 Dependencies
-      labels:
-        - dependencies
+apiVersion: xl-release/v1
+kind: Templates
+spec:
+- name: MyTemplate
+  type: xlrelease.Release
+  scheduledStartDate: 2018-10-25T07:00:00Z
+  phases:
+  - name: My Phase
+    type: xlrelease.Phase
+    tasks:
+    - name: My Task
+      type: xlrelease.Task
+    color: #0099CC
